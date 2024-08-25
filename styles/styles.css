@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario:  #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #FFFFFF;
+    --fuente-primaria: "Inter", sans-serif;
+}
+
+
+
+body{
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.principal__texto{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+.principal__titulo{
+    font-family: var(--fuente-primaria);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--color-secundario);
+}
+
+.principal__agregartexto{
+    background-color: var(--color-primario);
+    border: 0;
+    border-style: none;
+    width: 100%;
+    padding-bottom: 60%;
+    font-family: var(--fuente-primaria);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.principal__advertencia{
+    display: flex;
+    align-items: center;
+    font-family: var(--fuente-primaria);
+    font-size: 0.75rem;
+    font-weight: 400;
+    gap: 8px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.boton__encriptar{
+    width: 50%;
+    font-family: var(--fuente-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0.125rem solid var(--color-secundario);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    color: var(--color-terciario);
+    background-color: #0A3871;
+}
+
+.boton__desencriptar{
+    width: 50%;
+    font-family: var(--fuente-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0.125rem solid var(--color-secundario);
+    border-radius: 1.5rem;
+    padding: 1.5rem 0;
+    color: var(--color-secundario);
+    background-color: #D8DFE8;
+}
+
+.principal__respuesta{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: var(--color-terciario);
+    border-radius: 2rem;
+    padding: 15.188rem 0;
+}
+
+.principal__respuesta__texto{
+    font-family: var(--fuente-primaria);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #343A40;
+}
+
+.principal__respuesta__texto2{
+    font-family: var(--fuente-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    color: #495057;
+}
+
+
+
+
+@media(max-width: 1025px) and (min-width:430px){
+    .principal{
+        flex-direction: column;
+        width: auto;
+       }
+
+    .principal__titulo{
+        text-align: center;
+       }
+
+    .principal__texto{
+        width: auto;
+       }
+
+    .principal__respuesta__imagen{
+        display: none;
+    }
+
+    .principal__respuesta{
+        padding: 10%;
+       }
+}
+
+
+
+@media (max-width: 431px) {
+   .principal{
+    flex-direction: column;
+    width: auto;
+   }
+   
+   .principal__titulo{
+    text-align: center;
+   }
+
+   .principal__texto{
+    width: auto;
+   }
+
+   .principal__respuesta__imagen{
+    display: none;
+   }
+   
+   .boton {
+    width: auto;
+    flex-direction: column;
+   }
+
+   .boton__desencriptar {
+    width: 100%;
+   }
+
+   .boton__encriptar{
+    width: auto;
+   }
+
+   .principal__respuesta{
+    padding: 10%;
+   }
+}
