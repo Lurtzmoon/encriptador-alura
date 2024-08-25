@@ -1,0 +1,1 @@
+let textoSinEncriptar = "Ingrese el texto aqui";
