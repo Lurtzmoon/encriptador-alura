@@ -1,1 +1,23 @@
-let textoSinEncriptar = "Ingrese el texto aqui";
+
+function decir() {
+    console.log("wena perro")
+}
+
+function encriptar() {
+    textoIngresado = document.getElementById('textoUsuario').value;
+    textoEncriptado = textoIngresado.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
+    agregarTextoElemento("texto1", `${textoEncriptado}`);
+    return;
+}
+
+function desencriptar() {
+    textoIngresado = document.getElementById('textoUsuario').value;
+    textoEncriptado = textoIngresado.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+    agregarTextoElemento("texto1", `${textoEncriptado}`);
+    return;
+}
+
+function agregarTextoElemento(elemento, texto) {
+    let elementoHTML = document.getElementById(elemento);
+    elementoHTML.innerHTML = texto;
+}

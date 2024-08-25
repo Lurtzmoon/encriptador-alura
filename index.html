@@ -10,19 +10,19 @@
     <main class="principal">
         <section class="principal__texto">
             <h1 class="principal__titulo">Encriptador de texto</h1>
-            <textarea class="principal__agregartexto" type="text" placeholder="Introduzca su texto aqui"></textarea>
+            <textarea class="principal__agregartexto" id="textoUsuario" type="text" placeholder="Introduzca su texto aqui"></textarea>
             <div class="principal__advertencia">
                 <img src="assets/bi_exclamation-circle-fill.png" alt="logo exclamación">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="boton">
-                <button class="boton__encriptar">Encriptar</button>
-                <button class="boton__desencriptar">Desencriptar</button>
+                <button onclick="encriptar();" class="boton__encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="boton__desencriptar">Desencriptar</button>
             </div>
         </section>
         <div class="principal__respuesta">
             <img class="principal__respuesta__imagen" src="assets/Muñeco.png" alt="mujer sosteniendo una lupa">
-            <p class="principal__respuesta__texto">Ningún mensaje fue encontrado</p>
+            <p class="principal__respuesta__texto" id="texto1">Ningún mensaje fue encontrado</p>
             <p class="principal__respuesta__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
     </main>

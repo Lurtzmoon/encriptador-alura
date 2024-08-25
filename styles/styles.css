@@ -8,7 +8,6 @@
 }
 
 
-
 body{
     background-color: var(--color-primario);
     box-sizing: border-box;
@@ -41,6 +40,7 @@ body{
     font-family: var(--fuente-primaria);
     font-weight: 400;
     font-size: 2rem;
+    text-transform: lowercase;
 }
 
 .principal__advertencia{
